@@ -15,6 +15,10 @@ public class DemoXMLApplicationContext {
                      = new ClassPathXmlApplicationContext("applicationContext.xml")) {
 
             // Experiments
+
+            LOGGER.info("### applicationContext.getBeanDefinitionNames()");
+            LOGGER.info("### BeanDefinitionNames: {}", (Object)applicationContext.getBeanDefinitionNames());
+
             XMLPersonDAO xmlPersonDAO = applicationContext.getBean(XMLPersonDAO.class);
             LOGGER.info("### DAO: {}", xmlPersonDAO);
             LOGGER.info("### JDBC: {}", xmlPersonDAO.getXmlJdbcConnection());
