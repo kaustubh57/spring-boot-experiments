@@ -16,8 +16,8 @@ public class DemoScopeApplication {
         // ###### RUN ######
         ApplicationContext applicationContext = SpringApplication.run(DemoScopeApplication.class, args);
 
+        // Experiments
         PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);
-
         PersonDAO personDAO2 = applicationContext.getBean(PersonDAO.class);
 
         LOGGER.info("### Scope Logging experiments...");

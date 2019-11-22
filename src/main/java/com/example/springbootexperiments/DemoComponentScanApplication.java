@@ -18,6 +18,7 @@ public class DemoComponentScanApplication {
         // ###### RUN ######
         ApplicationContext applicationContext = SpringApplication.run(DemoComponentScanApplication.class, args);
 
+        // Experiments
         ComponentScanPersonDAO componentScanPersonDAO = applicationContext.getBean(ComponentScanPersonDAO.class);
 
         LOGGER.info("### Component Scan Logging experiments...");
