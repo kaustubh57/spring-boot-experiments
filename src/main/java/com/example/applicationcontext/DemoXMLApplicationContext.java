@@ -3,12 +3,8 @@ package com.example.applicationcontext;
 import com.example.applicationcontext.dao.XMLPersonDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-@Configuration
-@ComponentScan("com.example.applicationcontext")
 public class DemoXMLApplicationContext {
 
     private static Logger LOGGER = LoggerFactory.getLogger(DemoXMLApplicationContext.class);
@@ -20,8 +16,8 @@ public class DemoXMLApplicationContext {
 
             // Experiments
             XMLPersonDAO xmlPersonDAO = applicationContext.getBean(XMLPersonDAO.class);
-            LOGGER.info("DAO: {}", xmlPersonDAO);
-            LOGGER.info("JDBC: {}", xmlPersonDAO.getXmlJdbcConnection());
+            LOGGER.info("### DAO: {}", xmlPersonDAO);
+            LOGGER.info("### JDBC: {}", xmlPersonDAO.getXmlJdbcConnection());
         }
     }
 }

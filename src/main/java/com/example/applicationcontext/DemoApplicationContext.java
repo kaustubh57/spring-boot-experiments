@@ -6,9 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
 @ComponentScan("com.example.applicationcontext")
 public class DemoApplicationContext {
 
@@ -25,6 +23,6 @@ public class DemoApplicationContext {
         System.out.println(binarySearch);
 
         int result = binarySearch.binarySearch(new int[]{12, 4, 6}, 3);
-        System.out.println("###result >>> " + result);
+        System.out.println("### Result >>> " + result);
     }
 }
