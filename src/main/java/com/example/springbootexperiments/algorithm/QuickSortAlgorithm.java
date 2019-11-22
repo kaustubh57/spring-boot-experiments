@@ -1,10 +1,9 @@
 package com.example.springbootexperiments.algorithm;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 //@Primary
 @Qualifier("quick")
 public class QuickSortAlgorithm implements SortAlgorithm {
