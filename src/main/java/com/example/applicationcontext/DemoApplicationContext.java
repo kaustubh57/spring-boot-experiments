@@ -1,6 +1,6 @@
-package com.example.applicationContext;
+package com.example.applicationcontext;
 
-import com.example.applicationContext.algorithm.BinarySearchImpl;
+import com.example.applicationcontext.algorithm.BinarySearchImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.example.applicationContext")
+@ComponentScan("com.example.applicationcontext")
 public class DemoApplicationContext {
 
     private static Logger LOGGER = LoggerFactory.getLogger(DemoApplicationContext.class);

@@ -1,4 +1,4 @@
-package com.example.applicationContext.algorithm;
+package com.example.applicationcontext.algorithm;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
