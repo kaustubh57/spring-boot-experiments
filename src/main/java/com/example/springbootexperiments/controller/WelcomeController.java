@@ -18,7 +18,7 @@ import com.example.springbootexperiments.model.Welcome;
 public class WelcomeController {
 
     // inject via application.properties
-    @Value("${welcome.message.test}")
+    @Value("${welcome.message.test:Hello Word}")
     private String message = "Hello World";
 
     @GetMapping
