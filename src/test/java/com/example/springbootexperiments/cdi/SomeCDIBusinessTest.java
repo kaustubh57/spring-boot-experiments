@@ -23,9 +23,14 @@ public class SomeCDIBusinessTest {
     @Test
     public void testBasicScenario() {
         when(someCDIDAO.getData()).thenReturn(new int[]{2, 4});
-        // when dao.getData() method is called return int[]{2,4}
 
         assertEquals(4, business.findGreatest());
     }
 
+    @Test
+    public void whenEmptyData_thenReturn_MIN_VALUE() {
+        when(someCDIDAO.getData()).thenReturn(new int[]{});
+
+        assertEquals(Integer.MIN_VALUE, business.findGreatest());
+    }
 }
